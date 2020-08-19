@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>토트관리</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/header-image.css">
+    <link rel="stylesheet" href="../css/table.css">
+
+    <link rel="stylesheet" href="../js/dist/css/qrcode-reader.min.css">
+    <script src="../js/dist/js/jsQR/jsQR.js"></script>
+    <!-- <script src="../js/qrcodelib.js"></script> -->
+    <script src="../js/dist/js/qrcode-reader.js?v=20190604"></script>
+    <script src="../js/qrcode-camera.js"></script>
+    <script src="../js/qrCodeReader.js"></script>
+    <script src="../js/barcode.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" id="토트관리">
+      <div data-role="header" class="header-parent">
+        <div class="ui-grid-b header">
+          <div class="ui-block-a header">
+            <a href="#" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-edit ui-btn-icon-notext ui-corner-all image" data-role="button" role="button">edit</a>
+          </div>
+          <div class="ui-block-b header">
+            <p class="header-child">토트 관리</p>
+          </div>
+          <div class="ui-block-c header">
+            	<a href="#"data-qrr-multiple="false" data-qrr-repeat-timeout="1500" data-qrr-line-color="#00FF00" data-qrr-skip-duplicates="true" class="jqm-search-link ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-camera ui-btn-icon-notext ui-corner-all qrcode-reader" data-role="button" role="button">camera</a>
+          </div>
+        </div>
+    	</div>
+
+      <div data-role="main" class="ui-content" style="padding: 0.2em;">
+        <input type="text" data-inline="true" class="ui-input-text" id="barCode-text" placeholder="바코드 입력">
+        <table class="tote-management-table">
+          <tr>
+            <td class="tote-management-col">토트번호</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">현재공장</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">현재상태</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">현재위치</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">등록공장</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">구분</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">관리상태</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">대상공장</td>
+            <td class="tote-management-data"></td>
+          </tr>
+          <tr>
+            <td class="tote-management-col">사유구분</td>
+            <td class="tote-management-data"></td>
+          </tr>
+        </table>
+
+      <div class="ui-grid-b top" style="margin-left: 2px; margin-right:2px;">
+        <div class="ui-block-a">
+          <a href="ToteRegister.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:130px;background-color: #3980DC; color: white;margin-bottom: 1px;">토트등록</button></a>
+        </div>
+        <div class="ui-block-b">
+          <a href="" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:130px;background-color: #3980DC; color: white;margin-bottom: 1px;">토트전기</button></a>
+        </div>
+        <div class="ui-block-c">
+          <a href="ToteStatus.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:130px;background-color: #3980DC; color: white;margin-bottom: 1px;">토트현황</button></a>
+        </div>
+      </div>
+
+      <div class="ui-grid-b bottom" style="margin-left: 2px; margin-right:2px;">
+        <div class="ui-block-a">
+          <a href="RepairRequest.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:130px;background-color:#3980DC; color: white;margin-top: 0px;">수리요청</button></a>
+        </div>
+        <div class="ui-block-b">
+          <a href="RepairCompleted.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:130px;background-color: #3980DC; color: white;margin-top: 0px;">수리완료</button></a>
+        </div>
+        <div class="ui-block-c">
+          <a href="ChipChange.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:130px;background-color: #3980DC; color: white; margin-top: 0px;"><br>칩(RFID)</br>변경</button></a>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

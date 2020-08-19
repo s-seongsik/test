@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/table.css">
+  </head>
+  <body>
+
+    <div data-role="page" id="semi-product-info">
+      <div data-role="header" class="header-parent">
+          <p class="header-child">토트상세정보</p>
+      </div>
+      <div data-role="main" class="ui-content" style="padding:0.2em;">
+        <div class="table-content" style="height:525px;">
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <a href="#semi-product-info" style="text-decoration:none !important"><button type="button" class="ex-btn" style="height: 40px;color: white;margin: 0;background-color: black; color:white;">반제품정보</button></a>
+            </div>
+            <div class="ui-block-b">
+              <a href="#tote-info" style="text-decoration:none !important"><button type="button" class="ex-btn" style="height: 40px;color: white;margin: 0;background-color: black; color:white;">토트정보</button></a>
+            </div>
+          </div>
+
+          <table class="ToteDetails-table">
+            <tr>
+              <td class="ToteDetails-col">팩옵번호</td>
+              <td class="ToteDetails-data">데이터1</td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">팩옵공장</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">제품명</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">팩옵설비</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">팩옵시작</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">팩옵종료</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">유통기한</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">중량</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">품질판정</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">입고판정</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">밀도</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">색도</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">수분</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">유통도</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+          </table>
+        </div>
+        <a href="../SemiProductManagement/index.html" data-ajax="false" style="text-decoration:none !important">
+          <button type="button" class="ex-btn" style="height: 90px;color: white;margin: 0;background-color: #d05341;color: white;">취소</button></a>
+      </div>
+    </div>
+
+    <div data-role="page" id="tote-info">
+      <div data-role="header" class="header-parent">
+          <p class="header-child">토트상세정보</p>
+      </div>
+      <div data-role="main" class="ui-content" style="padding:0.2em">
+        <div class="table-content" style="height:525px;">
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <a href="#semi-product-info" style="text-decoration:none !important"><button type="button" class="ex-btn" style="height: 40px;color: white;margin: 0;background-color:black; color: white;">반제품정보</button></a>
+            </div>
+            <div class="ui-block-b">
+              <a href="#tote-info" style="text-decoration:none !important"><button type="button" class="ex-btn" style="height: 40px;color: white;margin: 0;background-color:black; color: white;">토트정보</button></a>
+            </div>
+          </div>
+          <table class="ToteDetails-table">
+            <tr>
+              <td class="ToteDetails-col">자산번호</td>
+              <td class="ToteDetails-data">데이터1</td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">RFID</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">구분</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">등록일시</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">폐기일시</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">관리상태</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">현재공장</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">현재상태</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+            <tr>
+              <td class="ToteDetails-col">송장번호</td>
+              <td class="ToteDetails-data"></td>
+            </tr>
+          </table>
+        </div>
+        <a href="../SemiProductManagement/index.html" data-ajax="false" style="text-decoration:none !important">
+          <button type="button" class="ex-btn" style="height: 90px;color: white;margin: 0;background-color: #d05341;color: white;">취소</button></a>
+      </div>
+    </div>
+  </body>
+</html>

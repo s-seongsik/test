@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+  </head>
+  <body>
+
+    <div data-role="page" id="수리요청">
+      <div data-role="header" class="header-parent">
+          <p class="header-child">칩(RFID) 변경</p>
+      </div>
+
+
+      <div data-role="main" class="ui-content" style="padding:0.2em;">
+        <div class="body-content" style="height:510px;">
+          <input class="input" disabled="disabled" type="text" name="textinput-1" id="textinput-1" placeholder="요청 토트번호" value="" style="text-align:center;">
+          <input class="input" disabled="disabled" type="text" name="textinput-1" id="textinput-1" placeholder="요청 RFID" value="" style="text-align:center;">
+          <input class="input" type="text" name="textinput-1" id="textinput-1" placeholder="신규 RFID" value="" style="text-align:center;">
+        </div>
+
+
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#" data-rel="back" style="text-decoration:none !important">
+              <button type="button" class="ex-btn" style="height: 100px;color: white;margin: 0;background-color: #d05341 ;color: white;">취소</button></a>
+          </div>
+          <div class="ui-block-b">
+            <button type="button" class="ex-btn" style="height: 100px;color: white;margin: 0;background-color: #d05341 ;color: white;">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
