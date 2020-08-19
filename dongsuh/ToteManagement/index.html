@@ -82,8 +82,16 @@
             <button type="button" class="main-button" style="height:130px;background-color: #3980DC; color: white;margin-bottom: 1px;">토트등록</button></a>
         </div>
         <div class="ui-block-b">
-          <a href="" data-ajax="false" style="text-decoration:none !important">
-            <button type="button" class="main-button" style="height:130px;background-color: #3980DC; color: white;margin-bottom: 1px;">토트전기</button></a>
+          <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" style="text-decoration:none !important">
+            <button type="button" class="ex-btn" style="height:130px;background-color: #3980DC; color: white;margin-bottom: 1px;">토트전기</button></a>
+            <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false">
+                <div role="main" class="ui-content popup-text">
+                  <P class="">[BC9999]</p>
+                  <p>리스트를 초기화 하시겠습니까?</p>
+                </div>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">확인</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">취소</a>
+              </div>
         </div>
         <div class="ui-block-c">
           <a href="ToteStatus.html" data-ajax="false" style="text-decoration:none !important">
