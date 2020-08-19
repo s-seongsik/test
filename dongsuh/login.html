@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 424 x 672 -->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--
+    <script src="js/login.js"></script>
+  -->
+  </head>
+
+  <body>
+    <input type="hidden" id="loginId" value="" >
+    <div data-role="page" id="login-Page">
+      <div data-role="header" class="header-parent">
+        <p class="header-child">토트 반제품 추적관리</p>
+      </div><!-- /header -->
+
+      <div data-role="content">
+        <div class="content-body" style="height:510px; margin-top:50px;">
+          <form id="loginForm" class="loginForm" action="loginAction" method="post">
+            <input type="hidden" name="password" value="">
+            <fieldset>
+              <div class="login-iloginFormt">
+                <label for="login-id" class="ui-hidden-accessible">ID:</label>
+                <input type="text" name="id" id="id" placeholder="아이디" value="">
+                <label for="login-password" class="ui-hidden-accessible">password:</label>
+                <input type="password" name="pw" id="pw" placeholder="패스워드" value="">
+
+                <select name="login-select" id="login-select">
+                  <option value="1" selected="selected">리더기선택안함</option>
+                  <option value="2">유타렉스</option>
+                  <option value="3">디오텔</option>
+                </select>
+
+                <input type="checkbox" class="idCheck" name="idCheck" id="idCheck" value="" style="display: none;" data-inline="true">
+                <label for="idCheck" style="background-color: transparent;border: none;"> 아이디 저장</label>
+              </div>
+            </fieldset>
+            <div class="form-action">
+              <a href="main/index.html" data-ajax="false" style="text-decoration:none !important">
+                <button type="button" class="login_btn" id="login_btn">로그인</button></a>
+            </div>
+          </form>
+          <p class="login-version_text">ver 1.3.91</p>
+        </div>
+      </div><!-- /content -->
+    </div><!-- /page -->
+
+  </body>
+</html>
