@@ -1,0 +1,37 @@
+.ui-mobile .ui-page{
+  background-color:#EAEAEA;
+}
+
+#login-Page{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-version_text{
+  text-align: right;
+}
+
+
+.ui-select .ui-btn{
+  height: 50px;
+  background-color: white;
+  text-align: left;
+  font-size: 20px;
+}
+
+#id, #pw{
+  background-color: #F4F4F4;
+  height: 80px;
+}
+
+#login_btn{
+  height: 100px;
+  background-color: #3980DC;
+  color: white;
+  font-size: 20px;
+}
+
+
+.form-action{
+  margin-top: 40px;
+}

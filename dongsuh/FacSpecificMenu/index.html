@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>공장특화메뉴</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/header-image.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../js/dist/css/qrcode-reader.min.css">
+    <script src="../js/dist/js/jsQR/jsQR.js"></script>
+    <!-- <script src="../js/qrcodelib.js"></script> -->
+    <script src="../js/dist/js/qrcode-reader.js?v=20190604"></script>
+    <script src="../js/qrcode-camera.js"></script>
+    <script src="../js/qrCodeReader.js"></script>
+    <script src="../js/barcode.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" class="공장특화메뉴">
+      <div data-role="header" class="header-parent">
+        <div class="ui-grid-b header">
+          <div class="ui-block-a header">
+            <a href="#" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-edit ui-btn-icon-notext ui-corner-all image" data-role="button" role="button">edit</a>
+          </div>
+          <div class="ui-block-b header">
+            <p class="header-child">공장특화메뉴</p>
+          </div>
+          <div class="ui-block-c header">
+            	<a href="#"data-qrr-multiple="false" data-qrr-repeat-timeout="1500" data-qrr-line-color="#00FF00" data-qrr-skip-duplicates="true" class="jqm-search-link ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-camera ui-btn-icon-notext ui-corner-all qrcode-reader" data-role="button" role="button">camera</a>
+          </div>
+        </div>
+    	</div>
+
+      <div data-role="main" class="ui-content" style="padding:0.2em;">
+        <input type="text" data-inline="true" class="ui-input-text" id="barCode-text" placeholder="바코드 입력">
+        <table class="Factory-specific-menu-table">
+          <tr>
+            <td class="Factory-specific-menu-col">토드번호</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">반제품</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">팩옵공장</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">팩옵번호</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">송장번호</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">현재공장</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">현재상태</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">현재위치</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">품질판정</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">입고판정</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+          <tr>
+            <td class="Factory-specific-menu-col">물성정보</td>
+            <td class="Factory-specific-menu-data"></td>
+          </tr>
+        </table>
+      <div class="row">
+        <div class="row ui-grid-b row">
+          <div class="ui-block-a">
+            <a href="2ndRefinedExtract.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">제2<br>정제추출액</br></button></a>
+          </div>
+          <div class="ui-block-b">
+            <a href="baejeondu.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">배전두</button></a>
+          </div>
+          <div class="ui-block-c">
+            <a href="KanuMG.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">KanuMG</button></a>
+          </div>
+        </div>
+        <div class="row ui-grid-b row">
+          <div class="ui-block-a">
+            <a href="Overflow.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">Overflow</button></a>
+          </div>
+          <div class="ui-block-b">
+            <a href="PotableSilo.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">Potable Silo</button></a>
+          </div>
+          <div class="ui-block-c">
+            <a href="CoffeeExtract.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">커피추출액</button></a>
+          </div>
+        </div>
+        <div class="row ui-grid-b row">
+          <div class="ui-block-a">
+            <a href="../Packoff/PackoffEnd.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">팩옵종료</button></a>
+          </div>
+          <div class="ui-block-b">
+            <a href="../Dumping/DumpingStart.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">덤핑시작</button></a>
+          </div>
+          <div class="ui-block-c">
+            <a href="../Dumping/DumpingEnd.html" data-ajax="false" style="text-decoration:none !important">
+              <button type="button" class="main-btn" style="height: 55px; font-size: 14px; color: white;margin: 0;background-color: #3980DC;color: white;">덤핑종료</button></a>
+          </div>
+        </div>
+        <div class="ui-grid-solo row">
+          <button type="button" class="ex-btn" style="height: 40px;color: white;margin: 0;background-color: #3980DC;color: white;">재출력</button></a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </body>
+</html>

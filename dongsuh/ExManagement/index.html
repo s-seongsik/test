@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>반제품 관리</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/header-image.css">
+    <link rel="stylesheet" href="../js/dist/css/qrcode-reader.min.css">
+    <script src="../js/dist/js/jsQR/jsQR.js"></script>
+    <!-- <script src="../js/qrcodelib.js"></script> -->
+    <script src="../js/dist/js/qrcode-reader.js?v=20190604"></script>
+    <script src="../js/qrcode-camera.js"></script>
+    <script src="../js/qrCodeReader.js"></script>
+    <script src="../js/barcode.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" class="반제품관리">
+      <div data-role="header" class="header-parent">
+        <div class="ui-grid-b header">
+          <div class="ui-block-a header">
+            <a href="#" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-edit ui-btn-icon-notext ui-corner-all image" data-role="button" role="button">edit</a>
+          </div>
+          <div class="ui-block-b header">
+            <p class="header-child">반제품 예외처리</p>
+          </div>
+          <div class="ui-block-c header">
+            	<a href="#"data-qrr-multiple="false" data-qrr-repeat-timeout="1500" data-qrr-line-color="#00FF00" data-qrr-skip-duplicates="true" class="jqm-search-link ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-camera ui-btn-icon-notext ui-corner-all qrcode-reader" data-role="button" role="button">camera</a>
+          </div>
+        </div>
+    	</div>
+
+      <div data-role="main" class="ui-content" style="padding: 0.2em;">
+        <input type="text" data-inline="true" class="ui-input-text" id="barCode-text" placeholder="바코드 입력">
+        <table class="ex-management-table">
+          <tr>
+            <td class="ex-management-col">토트번호</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">반제품</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">팩옵공장</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">팩옵번호</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">송장번호</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">현재공장</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">현재상태</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">현재위치</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">품질판정</td>
+            <td class="ex-management-data"></td>
+          </tr>
+          <tr>
+            <td class="ex-management-col">입고판정</td>
+            <td class="ex-management-data"></td>
+          </tr>
+        </table>
+
+      <div class="ui-grid-b top" style="margin-left: 2px; margin-right:2px;">
+        <div class="ui-block-a">
+          <a href="ExPackoffStart.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:110px;background-color: #3980DC; color: white;margin-bottom: 1px;">기타팩옵시작</button></a>
+        </div>
+        <div class="ui-block-b">
+          <a href="ExPackoffEnd.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:110px;background-color: #3980DC; color: white;margin-bottom: 1px;">기타팩옵종료</button></a>
+        </div>
+        <div class="ui-block-c">
+          <a href="ToteMoving.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:110px;background-color: #3980DC; color: white;margin-bottom: 1px;">토트이동</button></a>
+        </div>
+      </div>
+
+      <div class="ui-grid-b bottom" style="margin-left: 2px; margin-right:2px;">
+        <div class="ui-block-a">
+          <a href="ExDumpingStart.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:110px;background-color: #3980DC; color: white;margin-top: 0px;">기타덤핑시작</button></a>
+        </div>
+        <div class="ui-block-b">
+          <a href="ExDumpingEnd.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:110px;background-color: #3980DC; color: white;margin-top: 0px;">기타덤핑종료</button></a>
+         </div>
+        <div class="ui-block-c">
+          <a href="ToteTransfer.html" data-ajax="false" style="text-decoration:none !important">
+            <button type="button" class="main-button" style="height:110px;background-color: #3980DC; color: white;margin-top: 0px;">토트이관</button></a>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

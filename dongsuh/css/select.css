@@ -1,0 +1,21 @@
+
+.ui-selectmenu.ui-popup {
+    min-width: 300px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+
+#up-up-fac-button, #up-down-fac-button{
+  height: 3.5em;
+  background-color: #22aadd36;
+  text-align: left;
+  font-size: 20px;
+}
+
+#down-up-fac-button, #down-down-fac-button{
+  height: 3.5em;
+  background-color: #22aadd36;
+  text-align: left;
+  font-size: 20px;
+}

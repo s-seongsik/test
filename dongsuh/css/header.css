@@ -1,0 +1,13 @@
+.ui-page-theme-a .ui-bar-inherit{
+  background-color: #FFFFFF;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  display: table;
+}
+
+.header-child{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+}

@@ -1,0 +1,33 @@
+.ui-page-theme-a .ui-bar-inherit{
+  background-color: #FFFFFF;
+  height: 50px;
+}
+
+.header-child{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 22px;
+  text-align:center;
+}
+
+
+.ui-block-b.header{
+  height: 50px;
+  display: table;
+}
+
+input.camera-button{
+  background: url( "../image/camera.png" ) no-repeat;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+input.edit-button{
+  background: url( "../image/edit.png" ) no-repeat;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

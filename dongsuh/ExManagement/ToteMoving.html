@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/select.css">
+  </head>
+  <body>
+
+    <div data-role="page" id="토트이동">
+      <div data-role="header" class="header-parent">
+          <p class="header-child">토트이동</p>
+      </div>
+
+      <div data-role="main" class="ui-content" style="padding:0.2em">
+        <div class="body-content" style="height:510px">
+          <div class="ui-grid-b">
+            <div class="ui-block-a label" style="width:20%">
+              <p class="label"  style="text-align:center">이동일</p>
+            </div>
+            <div class="ui-block-b input1" name="date" style="width:50%">
+              <form>
+                <input type="date" data-clear-btn="false" name="date-1" class="date-1" value="" style="text-align:center">
+              </form>
+            </div>
+            <div class="ui-block-c input2" style="width:30%">
+              <form>
+                <input type="time" data-clear-btn="false" name="time-2" class="time-1" value="" style="text-align:center">
+              </form>
+            </div>
+          </div>
+
+          <input class="text" disabled="disabled" type="text" name="textinput-1" id="textinput-1" placeholder="토트번호 정보" value="" style="text-align:center">
+          <input class="text" disabled="disabled" type="text" name="textinput-1" id="textinput-1" placeholder="현재공장 정보" value="" style="text-align:center">
+          <input class="text" disabled="disabled" type="text" name="textinput-1" id="textinput-1" placeholder="현재위치 정보" value="" style="text-align:center">
+
+          <select class="item" name="select1" data-native-menu="false">
+            <option value="choose-one" data-placeholder="true">이동위치</option>
+            <option value="1">창원 토트등록장</option>
+            <option value="2">창원 세척장</option>
+            <option value="3">창원 FD팩옵장</option>
+            <option value="4">창원 SD팩옵장</option>
+            <option value="5">창원 CP팩옵장</option>
+            <option value="6">창원 덤핑장</option>
+            <option value="7">창원 이송장</option>
+            <option value="8">창원 FD미분</option>
+            <option value="9">창원 SD미분</option>
+            <option value="10">창원 예비</option>
+            <option value="11">창원 예비</option>     
+            <option value="12">창원 예비</option>
+            <option value="13">창원 예비</option>
+            <option value="14">창원 예비</option>     
+            <option value="15">창원 예비</option>
+            <option value="16">창원 예비</option>
+            <option value="17">창원 예비</option>
+            <option value="18">창원 CP집진기미분</option>
+            <option value="19">창원 FD포장집진기미분</option>
+            <option value="20">창원 FD PIP회수</option>
+            <option value="21">창원 SD PIP회수</option>
+            <option value="22">창원 CP PIP회수</option>
+            <option value="23">창원 1팀 토트보관소</option>
+            <option value="24">창원 2팀 토트보관소</option>
+            <option value="25">창원 1팀 이관장소</option>
+            <option value="26">창원 2팀 이관장소</option>
+            <option value="27">창원 블랜딩덤핑장</option>
+            <option value="28">창원 PIP덤핑장</option>
+          </select>
+
+          <select class="item" name="select2" data-native-menu="false">
+            <option value="choose-one" data-placeholder="true">인수팀</option>
+            <option value="1">제조1팀</option>
+            <option value="2">제조2팀</option>
+            <option value="3">QC팀</option>
+            <option value="4">전산팀</option>
+            <option value="5">관리팀</option>
+          </select>
+
+
+        </div>
+
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#" data-rel="back" style="text-decoration:none !important">
+              <button type="button" class="ex-btn" style="height: 100px;color: white;margin: 0;background-color: #d05341 ;color: white;">취소</button></a>
+          </div>
+          <div class="ui-block-b">
+            <button type="button" class="ex-btn" style="height: 100px;color: white;margin: 0;background-color: #d05341 ;color: white;">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

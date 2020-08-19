@@ -1,0 +1,126 @@
+.semi-product-management-table,
+.totemoving-table,
+.tote-management-table,
+.ex-management-table,
+.Factory-specific-menu-table,
+.tote-trans-table,
+.ToteDetails-table,
+.dumping-table{
+  width: 100%;
+  text-align: center;
+}
+
+.semi-product-management-col{
+  width: 20%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.semi-product-management-data{
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+
+.totemoving-col{
+  width: 10%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.totemoving-data{
+  width: 90%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.tote-management-col{
+  width: 20%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.tote-management-data{
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.ex-management-col{
+  width: 20%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.ex-management-data{
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.Factory-specific-menu-col{
+  width: 20%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.Factory-specific-menu-data{
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.tote-trans-col{
+  width: 20%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.tote-trans-data{
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  height: 26px;
+  font-size: 15px;
+}
+
+.ToteDetails-col{
+  width: 20%;
+  border: 1px solid #d6d6d6;
+  height: 30px;
+  font-size: 15px;
+  background-color: gray;
+  color: white;
+}
+.ToteDetails-data{
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  height: 30px;
+  font-size: 15px;
+}
+
+.dumping-col{
+  width: 20%;
+  border: 1px solid #d6d6d6;
+  height: 40px;
+  font-size: 15px;
+}
+
+
+.dumping-data{
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  height: 40px;
+  font-size: 15px;
+}
